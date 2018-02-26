@@ -1,4 +1,4 @@
-# morse-sending
+# Morse Sending
 Prototype of Morse Harbor sending mechanic.
 Created with [Vue.js](https://vuejs.org/) and [jQuery](http://jquery.com/).
 

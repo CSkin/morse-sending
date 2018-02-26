@@ -8,7 +8,10 @@ $( document ).ready( function () {
 
 var App = new Vue ({
   el: '#app',
-  data: {},
+  data: {
+    message1: 'HELLO WORLD',
+    message2: 'HELLO WOR'
+  },
   computed: {},
   methods: {},
   components: {}
@@ -20,6 +23,6 @@ function keyHandler () {
 
 }
 
-$( document ).keyUp( keyHandler );
+$( document ).keyup( keyHandler );
 
 });

@@ -3,14 +3,29 @@
   <head>
     <meta charset='utf-8'>
     <title>Morse Sending</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.js'></script>
     <script src='script.js'></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main id='app' v-cloak>
-
+      <div id='top-content'>
+        <div id='paper' class='panel'>
+          <div id='prompt'>{{ message1 }}</div>
+        </div>
+        <div id='key' class='panel'>
+          <div id='display'>
+            <div id='slider'>
+              <div id='text'>{{ message2 }}</div>
+            </div>
+          </div>
+          <div id='paddles'>paddles</div>
+        </div>
+      </div>
+      <div id='bottom-content'>
+        <div id='tabs' class='panel'>tabs</div>
+      </div>
     </main>
   </body>
 </html>
