@@ -21,13 +21,13 @@
             </div>
           </div>
           <div id='paddles'>
-            <div class='holder dot'>
-              <img class='paddle dot' src='paddle-dot.svg' alt='Dot paddle (/)'>
-              <span class='label'>/</span>
+            <div class='holder'>
+              <img class='paddle' src='paddle-dot.svg' alt='Dot paddle (/)'>
+              <label>/</label>
             </div>
-            <div class='holder dash'>
-              <img class='paddle dash' src='paddle-dash.svg' alt='Dash paddle (Shift)'>
-              <span class='label'>Shift</span>
+            <div class='holder'>
+              <img class='paddle' src='paddle-dash.svg' alt='Dash paddle (Shift)'>
+              <label>Shift</label>
             </div>
           </div>
         </div>
@@ -40,7 +40,11 @@
             <footer-tab name='settings' :active='activeTab'></footer-tab>
           </div>
           <div id='content'>
-            <inst-content :mobile='isMobile'></inst-content>
+            <component
+              :is='activeTab'
+              :mobile='isMobile'
+              :data='data'
+            ></component>
           </div>
         </div>
       </div>
