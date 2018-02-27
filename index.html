@@ -10,7 +10,7 @@
   </head>
   <body>
     <main id='app' v-cloak>
-      <div id='top-content'>
+      <div id='top'>
         <div id='paper' class='panel'>
           <div id='prompt'>{{ message1 }}</div>
         </div>
@@ -20,11 +20,29 @@
               <div id='text'>{{ message2 }}</div>
             </div>
           </div>
-          <div id='paddles'>paddles</div>
+          <div id='paddles'>
+            <div class='holder dot'>
+              <img class='paddle dot' src='paddle-dot.svg' alt='Dot paddle (/)'>
+              <span class='label'>/</span>
+            </div>
+            <div class='holder dash'>
+              <img class='paddle dash' src='paddle-dash.svg' alt='Dash paddle (Shift)'>
+              <span class='label'>Shift</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div id='bottom-content'>
-        <div id='tabs' class='panel'>tabs</div>
+      <div id='bottom'>
+        <div id='footer' class='panel'>
+          <div id='tabs'>
+            <footer-tab name='instructions' :active='activeTab'></footer-tab>
+            <footer-tab name='reference' :active='activeTab'></footer-tab>
+            <footer-tab name='settings' :active='activeTab'></footer-tab>
+          </div>
+          <div id='content'>
+            <inst-content :mobile='isMobile'></inst-content>
+          </div>
+        </div>
       </div>
     </main>
   </body>
