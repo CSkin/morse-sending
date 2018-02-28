@@ -1,65 +1,99 @@
 // ------------------------{  Data Preparation  }------------------------
 
 var appData = {
-  'A': { 'char': 'A', 'code': Array.from('.-'), 'enabled': false },
-  'B': { 'char': 'B', 'code': Array.from('-...'), 'enabled': false },
-  'C': { 'char': 'C', 'code': Array.from('-.-.'), 'enabled': false },
-  'D': { 'char': 'D', 'code': Array.from('-..'), 'enabled': false },
+  'A': { 'char': 'A', 'code': Array.from('.-'), 'enabled': true },
+  'B': { 'char': 'B', 'code': Array.from('-...'), 'enabled': true },
+  'C': { 'char': 'C', 'code': Array.from('-.-.'), 'enabled': true },
+  'D': { 'char': 'D', 'code': Array.from('-..'), 'enabled': true },
   'E': { 'char': 'E', 'code': Array.from('.'), 'enabled': true },
-  'F': { 'char': 'F', 'code': Array.from('..-.'), 'enabled': false },
-  'G': { 'char': 'G', 'code': Array.from('--.'), 'enabled': false },
-  'H': { 'char': 'H', 'code': Array.from('....'), 'enabled': false },
-  'I': { 'char': 'I', 'code': Array.from('..'), 'enabled': false },
-  'J': { 'char': 'J', 'code': Array.from('.---'), 'enabled': false },
-  'K': { 'char': 'K', 'code': Array.from('-.-'), 'enabled': false },
-  'L': { 'char': 'L', 'code': Array.from('.-..'), 'enabled': false },
-  'M': { 'char': 'M', 'code': Array.from('--'), 'enabled': false },
-  'N': { 'char': 'N', 'code': Array.from('-.'), 'enabled': false },
-  'O': { 'char': 'O', 'code': Array.from('---'), 'enabled': false },
-  'P': { 'char': 'P', 'code': Array.from('.--.'), 'enabled': false },
-  'Q': { 'char': 'Q', 'code': Array.from('--.-'), 'enabled': false },
-  'R': { 'char': 'R', 'code': Array.from('.-.'), 'enabled': false },
-  'S': { 'char': 'S', 'code': Array.from('...'), 'enabled': false },
+  'F': { 'char': 'F', 'code': Array.from('..-.'), 'enabled': true },
+  'G': { 'char': 'G', 'code': Array.from('--.'), 'enabled': true },
+  'H': { 'char': 'H', 'code': Array.from('....'), 'enabled': true },
+  'I': { 'char': 'I', 'code': Array.from('..'), 'enabled': true },
+  'J': { 'char': 'J', 'code': Array.from('.---'), 'enabled': true },
+  'K': { 'char': 'K', 'code': Array.from('-.-'), 'enabled': true },
+  'L': { 'char': 'L', 'code': Array.from('.-..'), 'enabled': true },
+  'M': { 'char': 'M', 'code': Array.from('--'), 'enabled': true },
+  'N': { 'char': 'N', 'code': Array.from('-.'), 'enabled': true },
+  'O': { 'char': 'O', 'code': Array.from('---'), 'enabled': true },
+  'P': { 'char': 'P', 'code': Array.from('.--.'), 'enabled': true },
+  'Q': { 'char': 'Q', 'code': Array.from('--.-'), 'enabled': true },
+  'R': { 'char': 'R', 'code': Array.from('.-.'), 'enabled': true },
+  'S': { 'char': 'S', 'code': Array.from('...'), 'enabled': true },
   'T': { 'char': 'T', 'code': Array.from('-'), 'enabled': true },
-  'U': { 'char': 'U', 'code': Array.from('..-'), 'enabled': false },
-  'V': { 'char': 'V', 'code': Array.from('...-'), 'enabled': false },
-  'W': { 'char': 'W', 'code': Array.from('.--'), 'enabled': false },
-  'X': { 'char': 'X', 'code': Array.from('-..-'), 'enabled': false },
-  'Y': { 'char': 'Y', 'code': Array.from('-.--'), 'enabled': false },
-  'Z': { 'char': 'Z', 'code': Array.from('--..'), 'enabled': false },
-  '01': { 'char': '1', 'code': Array.from('.----'), 'enabled': false },
-  '02': { 'char': '2', 'code': Array.from('..---'), 'enabled': false },
-  '03': { 'char': '3', 'code': Array.from('...--'), 'enabled': false },
-  '04': { 'char': '4', 'code': Array.from('....-'), 'enabled': false },
-  '05': { 'char': '5', 'code': Array.from('.....'), 'enabled': false },
-  '06': { 'char': '6', 'code': Array.from('-....'), 'enabled': false },
-  '07': { 'char': '7', 'code': Array.from('--...'), 'enabled': false },
-  '08': { 'char': '8', 'code': Array.from('---..'), 'enabled': false },
-  '09': { 'char': '9', 'code': Array.from('----.'), 'enabled': false },
-  '00': { 'char': '0', 'code': Array.from('-----'), 'enabled': false }
+  'U': { 'char': 'U', 'code': Array.from('..-'), 'enabled': true },
+  'V': { 'char': 'V', 'code': Array.from('...-'), 'enabled': true },
+  'W': { 'char': 'W', 'code': Array.from('.--'), 'enabled': true },
+  'X': { 'char': 'X', 'code': Array.from('-..-'), 'enabled': true },
+  'Y': { 'char': 'Y', 'code': Array.from('-.--'), 'enabled': true },
+  'Z': { 'char': 'Z', 'code': Array.from('--..'), 'enabled': true },
+  '01': { 'char': '1', 'code': Array.from('.----'), 'enabled': true },
+  '02': { 'char': '2', 'code': Array.from('..---'), 'enabled': true },
+  '03': { 'char': '3', 'code': Array.from('...--'), 'enabled': true },
+  '04': { 'char': '4', 'code': Array.from('....-'), 'enabled': true },
+  '05': { 'char': '5', 'code': Array.from('.....'), 'enabled': true },
+  '06': { 'char': '6', 'code': Array.from('-....'), 'enabled': true },
+  '07': { 'char': '7', 'code': Array.from('--...'), 'enabled': true },
+  '08': { 'char': '8', 'code': Array.from('---..'), 'enabled': true },
+  '09': { 'char': '9', 'code': Array.from('----.'), 'enabled': true },
+  '00': { 'char': '0', 'code': Array.from('-----'), 'enabled': true }
 }
 
 $( document ).ready( function () {
 
 // -------------------------{  Vue Components  }-------------------------
 
+var KeyPaddle = {
+  template: `
+    <div class='holder'>
+      <img
+        :id="'paddle-' + type"
+        :src="'paddle-' + type + '.svg'"
+        :alt='imgAlt'
+        class='paddle'
+        :class='{ down: down }'
+        @mousedown='paddleDown'
+        @mouseup='paddleUp'
+      >
+      <label :class='{ hidden: mobile }'>{{ hotkey }}</label>
+    </div>
+  `,
+  props: ['type', 'hotkey', 'down', 'mobile'],
+  computed: {
+    imgAlt: function () {
+      var type = this.type.charAt(0).toUpperCase() + this.type.slice(1);
+      return type + ' paddle (' + this.hotkey + ')';
+    }
+  },
+  methods: {
+    paddleDown: function () {
+      App[this.type + 'PaddleDown'] = true;
+    },
+    paddleUp: function () {
+      App[this.type + 'PaddleDown'] = false;
+    }
+  }
+}
+
 var FooterTab = {
   template: `
-    <div :id="'tab-' + name" class='tab' :class='tabClass'>
+    <div class='tab' :class='tabClass' @click='switchTab'>
       {{ capitalize(name) }}
     </div>
   `,
-  props: ['name', 'active'],
+  props: ['name', 'tab'],
   computed: {
     tabClass: function () {
-      var isActive = this.name === this.active;
       return {
-        active: isActive,
-        inactive: !isActive
+        active: this.name === this.tab,
+        inactive: this.name !== this.tab
       }
     }
   },
   methods: {
+    switchTab: function () {
+      App.tab = this.name;
+    },
     capitalize: function (string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
     }
@@ -121,7 +155,7 @@ var Reference = {
         v-for='(value, key) in data'
         :key='key'
         :charData='value'
-        v-if='value.enabled' 
+        v-if='value.enabled'
       ></ref-item>
     </div>
   `,
@@ -134,8 +168,8 @@ var Reference = {
 var CheckBox = {
   template: `
     <div class='checkbox'>
-      <input type='checkbox' :name='charData.char' :value='charData.enabled'>
-      <label>{{ charData.char }}</label>
+      <input type='checkbox' :id='charData.char' v-model='charData.enabled'>
+      <label :for='charData.char'>{{ charData.char }}</label>
     </div>
   `,
   props: ['charData']
@@ -165,12 +199,15 @@ var App = new Vue ({
     data: appData,
     message1: 'HELLO WORLD',
     message2: 'HELLO WOR',
-    activeTab: 'reference',
-    isMobile: true
+    dotPaddleDown: false,
+    dashPaddleDown: false,
+    tab: 'instructions',
+    mobile: false
   },
   computed: {},
   methods: {},
   components: {
+    'key-paddle': KeyPaddle,
     'footer-tab': FooterTab,
     'instructions': Instructions,
     'reference': Reference,
@@ -181,9 +218,19 @@ var App = new Vue ({
 // --------------------------{  Key Handling  }--------------------------
 
 function keyHandler () {
-
+  // console.log('keyCode: ' + event.keyCode); // Developer mode
+  var eventType = event.type.replace('key', 'mouse');
+  switch (event.keyCode) {
+    case 16: // Shift
+      $( '#paddle-dash' ).trigger( eventType );
+      break;
+    case 191: // forward slash
+      $( '#paddle-dot' ).trigger( eventType );
+      break;
+  }
 }
 
+$( document ).keydown( keyHandler );
 $( document ).keyup( keyHandler );
 
 });

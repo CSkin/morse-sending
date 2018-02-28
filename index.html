@@ -21,28 +21,32 @@
             </div>
           </div>
           <div id='paddles'>
-            <div class='holder'>
-              <img class='paddle' src='paddle-dot.svg' alt='Dot paddle (/)'>
-              <label>/</label>
-            </div>
-            <div class='holder'>
-              <img class='paddle' src='paddle-dash.svg' alt='Dash paddle (Shift)'>
-              <label>Shift</label>
-            </div>
+            <key-paddle
+              type='dot'
+              hotkey='/'
+              :down='dotPaddleDown'
+              :mobile='mobile'
+            ></key-paddle>
+            <key-paddle
+              type='dash'
+              hotkey='Shift'
+              :down='dashPaddleDown'
+              :mobile='mobile'
+            ></key-paddle>
           </div>
         </div>
       </div>
       <div id='bottom'>
         <div id='footer' class='panel'>
           <div id='tabs'>
-            <footer-tab name='instructions' :active='activeTab'></footer-tab>
-            <footer-tab name='reference' :active='activeTab'></footer-tab>
-            <footer-tab name='settings' :active='activeTab'></footer-tab>
+            <footer-tab name='instructions' :tab='tab'></footer-tab>
+            <footer-tab name='reference' :tab='tab'></footer-tab>
+            <footer-tab name='settings' :tab='tab'></footer-tab>
           </div>
           <div id='content'>
             <component
-              :is='activeTab'
-              :mobile='isMobile'
+              :is='tab'
+              :mobile='mobile'
               :data='data'
             ></component>
           </div>

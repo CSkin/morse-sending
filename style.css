@@ -7,6 +7,10 @@ body {
   user-select: none;
 }
 
+main {
+  width: 320px;
+}
+
 div {
   box-sizing: border-box;
 }
@@ -29,7 +33,7 @@ div {
 
 #prompt {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.6em;
   line-height: 1.3;
   letter-spacing: 0.1em;
   word-spacing: 0.3em;
@@ -79,6 +83,20 @@ div {
 
 .holder label {
   margin-top: 4px;
+}
+
+.paddle {
+  position: relative;
+  z-index: 1;
+}
+
+.down {
+  filter: invert(100%);
+  top: 4px;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 #footer {
@@ -138,7 +156,7 @@ div {
 }
 
 #instructions ul {
-  -webkit-padding-start: 30px;
+  -webkit-padding-start: 25px;
 }
 
 #settings {
@@ -155,19 +173,19 @@ div {
 }
 
 #reference {
-  font-size: 1.2em;
-  font-weight: bold;
-  columns: 7em;
+  font-size: 1.4em;
+  columns: 6em;
+  column-gap: 0.4em;
 }
 
 #reference p {
-  -webkit-margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
+  -webkit-margin-before: 0.3em;
+  -webkit-margin-after: 0.3em;
 }
 
 .symbol {
   position: relative;
   top: 0.12em;
   height: 1em;
-  margin: 0 0.1em;
+  margin: 0 1px;
 }
