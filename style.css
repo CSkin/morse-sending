@@ -32,12 +32,12 @@ div {
 }
 
 .correct {
-  background: #80ff80;
+  background: #bfffbf;
   font-weight: bold;
 }
 
 .incorrect {
-  background: #ff8080;
+  background: #ffbfbf;
   font-weight: bold;
 }
 

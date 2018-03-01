@@ -39,6 +39,22 @@ var appData = {
   '00': { 'char': '0', 'code': '-----', 'enabled': false }
 }
 
+function detectMobile () {
+  if (
+    navigator.userAgent.match(/Android/i) ||
+    navigator.userAgent.match(/webOS/i) ||
+    navigator.userAgent.match(/iPhone/i) ||
+    navigator.userAgent.match(/iPad/i) ||
+    navigator.userAgent.match(/iPod/i) ||
+    navigator.userAgent.match(/BlackBerry/i) ||
+    navigator.userAgent.match(/Windows Phone/i)
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 $( document ).ready( function () {
 
 // -------------------------{  Vue Components  }-------------------------
@@ -109,14 +125,16 @@ var Instructions = {
       <p v-if='mobile'>Use the dot and dash buttons to code in the message shown
       above.</p>
       <p v-else>Use the / and Shift keys on your keyboard to code in the message
-      shown on the left.</p>
+      shown above.</p>
       <ul>
         <li>Leave a short pause to start a new letter.</li>
         <li>Leave a medium pause to insert a space.</li>
-        <li>Leave a long pause to send the message.</li>
+        <li>Leave a long pause to send your message.</li>
       </ul>
       <p>If you make a mistake, just wait for the message to send and you’ll be
       able to start over.</p>
+      <p>To skip the current message, <span v-if='mobile'>tap</span><span
+      v-else>click</span> it and you'll get a new one.</p>
       <p>You can choose which characters you want to practice with on the
       Settings tab.</p>
     </div>
@@ -224,7 +242,7 @@ var App = new Vue ({
     dotPaddleDown: false,
     dashPaddleDown: false,
     tab: 'instructions',
-    mobile: false
+    mobile: detectMobile()
   },
   computed: {
     enabledChars: function () {
