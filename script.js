@@ -1,42 +1,42 @@
 // ------------------------{  Data Preparation  }------------------------
 
 var appData = {
-  'A': { 'char': 'A', 'code': Array.from('.-'), 'enabled': true },
-  'B': { 'char': 'B', 'code': Array.from('-...'), 'enabled': true },
-  'C': { 'char': 'C', 'code': Array.from('-.-.'), 'enabled': true },
+  'A': { 'char': 'A', 'code': Array.from('.-'), 'enabled': false },
+  'B': { 'char': 'B', 'code': Array.from('-...'), 'enabled': false },
+  'C': { 'char': 'C', 'code': Array.from('-.-.'), 'enabled': false },
   'D': { 'char': 'D', 'code': Array.from('-..'), 'enabled': true },
   'E': { 'char': 'E', 'code': Array.from('.'), 'enabled': true },
-  'F': { 'char': 'F', 'code': Array.from('..-.'), 'enabled': true },
-  'G': { 'char': 'G', 'code': Array.from('--.'), 'enabled': true },
-  'H': { 'char': 'H', 'code': Array.from('....'), 'enabled': true },
-  'I': { 'char': 'I', 'code': Array.from('..'), 'enabled': true },
-  'J': { 'char': 'J', 'code': Array.from('.---'), 'enabled': true },
-  'K': { 'char': 'K', 'code': Array.from('-.-'), 'enabled': true },
-  'L': { 'char': 'L', 'code': Array.from('.-..'), 'enabled': true },
-  'M': { 'char': 'M', 'code': Array.from('--'), 'enabled': true },
-  'N': { 'char': 'N', 'code': Array.from('-.'), 'enabled': true },
-  'O': { 'char': 'O', 'code': Array.from('---'), 'enabled': true },
-  'P': { 'char': 'P', 'code': Array.from('.--.'), 'enabled': true },
-  'Q': { 'char': 'Q', 'code': Array.from('--.-'), 'enabled': true },
-  'R': { 'char': 'R', 'code': Array.from('.-.'), 'enabled': true },
-  'S': { 'char': 'S', 'code': Array.from('...'), 'enabled': true },
-  'T': { 'char': 'T', 'code': Array.from('-'), 'enabled': true },
-  'U': { 'char': 'U', 'code': Array.from('..-'), 'enabled': true },
-  'V': { 'char': 'V', 'code': Array.from('...-'), 'enabled': true },
-  'W': { 'char': 'W', 'code': Array.from('.--'), 'enabled': true },
-  'X': { 'char': 'X', 'code': Array.from('-..-'), 'enabled': true },
-  'Y': { 'char': 'Y', 'code': Array.from('-.--'), 'enabled': true },
-  'Z': { 'char': 'Z', 'code': Array.from('--..'), 'enabled': true },
-  '01': { 'char': '1', 'code': Array.from('.----'), 'enabled': true },
-  '02': { 'char': '2', 'code': Array.from('..---'), 'enabled': true },
-  '03': { 'char': '3', 'code': Array.from('...--'), 'enabled': true },
-  '04': { 'char': '4', 'code': Array.from('....-'), 'enabled': true },
-  '05': { 'char': '5', 'code': Array.from('.....'), 'enabled': true },
-  '06': { 'char': '6', 'code': Array.from('-....'), 'enabled': true },
-  '07': { 'char': '7', 'code': Array.from('--...'), 'enabled': true },
-  '08': { 'char': '8', 'code': Array.from('---..'), 'enabled': true },
-  '09': { 'char': '9', 'code': Array.from('----.'), 'enabled': true },
-  '00': { 'char': '0', 'code': Array.from('-----'), 'enabled': true }
+  'F': { 'char': 'F', 'code': Array.from('..-.'), 'enabled': false },
+  'G': { 'char': 'G', 'code': Array.from('--.'), 'enabled': false },
+  'H': { 'char': 'H', 'code': Array.from('....'), 'enabled': false },
+  'I': { 'char': 'I', 'code': Array.from('..'), 'enabled': false },
+  'J': { 'char': 'J', 'code': Array.from('.---'), 'enabled': false },
+  'K': { 'char': 'K', 'code': Array.from('-.-'), 'enabled': false },
+  'L': { 'char': 'L', 'code': Array.from('.-..'), 'enabled': false },
+  'M': { 'char': 'M', 'code': Array.from('--'), 'enabled': false },
+  'N': { 'char': 'N', 'code': Array.from('-.'), 'enabled': false },
+  'O': { 'char': 'O', 'code': Array.from('---'), 'enabled': false },
+  'P': { 'char': 'P', 'code': Array.from('.--.'), 'enabled': false },
+  'Q': { 'char': 'Q', 'code': Array.from('--.-'), 'enabled': false },
+  'R': { 'char': 'R', 'code': Array.from('.-.'), 'enabled': false },
+  'S': { 'char': 'S', 'code': Array.from('...'), 'enabled': false },
+  'T': { 'char': 'T', 'code': Array.from('-'), 'enabled': false },
+  'U': { 'char': 'U', 'code': Array.from('..-'), 'enabled': false },
+  'V': { 'char': 'V', 'code': Array.from('...-'), 'enabled': false },
+  'W': { 'char': 'W', 'code': Array.from('.--'), 'enabled': false },
+  'X': { 'char': 'X', 'code': Array.from('-..-'), 'enabled': false },
+  'Y': { 'char': 'Y', 'code': Array.from('-.--'), 'enabled': false },
+  'Z': { 'char': 'Z', 'code': Array.from('--..'), 'enabled': false },
+  '01': { 'char': '1', 'code': Array.from('.----'), 'enabled': false },
+  '02': { 'char': '2', 'code': Array.from('..---'), 'enabled': false },
+  '03': { 'char': '3', 'code': Array.from('...--'), 'enabled': false },
+  '04': { 'char': '4', 'code': Array.from('....-'), 'enabled': false },
+  '05': { 'char': '5', 'code': Array.from('.....'), 'enabled': false },
+  '06': { 'char': '6', 'code': Array.from('-....'), 'enabled': false },
+  '07': { 'char': '7', 'code': Array.from('--...'), 'enabled': false },
+  '08': { 'char': '8', 'code': Array.from('---..'), 'enabled': false },
+  '09': { 'char': '9', 'code': Array.from('----.'), 'enabled': false },
+  '00': { 'char': '0', 'code': Array.from('-----'), 'enabled': false }
 }
 
 $( document ).ready( function () {
@@ -67,7 +67,10 @@ var KeyPaddle = {
   },
   methods: {
     paddleDown: function () {
-      App[this.type + 'PaddleDown'] = true;
+      if (App[this.type + 'PaddleDown'] === false) {
+        App[this.type + 'PaddleDown'] = true;
+        // What else should happen when a paddle is pressed?
+      }
     },
     paddleUp: function () {
       App[this.type + 'PaddleDown'] = false;
@@ -168,11 +171,25 @@ var Reference = {
 var CheckBox = {
   template: `
     <div class='checkbox'>
-      <input type='checkbox' :id='charData.char' v-model='charData.enabled'>
+      <input
+        type='checkbox'
+        :id='charData.char'
+        v-model='charData.enabled'
+        @click='checkSettings($event)'
+      >
       <label :for='charData.char'>{{ charData.char }}</label>
     </div>
   `,
-  props: ['charData']
+  props: ['charData'],
+  methods: {
+    checkSettings: function (event) {
+      var chars = App.enabledChars;
+      if (chars.length === 1 && chars[0] === this.charData.char) {
+        event.preventDefault();
+        alert('You must choose at least one character!');
+      }
+    }
+  }
 }
 
 var Settings = {
@@ -197,15 +214,54 @@ var App = new Vue ({
   el: '#app',
   data: {
     data: appData,
-    message1: 'HELLO WORLD',
-    message2: 'HELLO WOR',
+    message1: null,
+    message2: '',
     dotPaddleDown: false,
     dashPaddleDown: false,
     tab: 'instructions',
     mobile: false
   },
-  computed: {},
-  methods: {},
+  computed: {
+    enabledChars: function () {
+      return Object.values(this.data)
+        .filter( o => o.enabled )
+        .map( o => o.char);
+    }
+  },
+  methods: {
+    generateMessage: function () {
+      var message = '';
+      message += this.generateCallSign();
+      message += ' DE ';
+      message += this.generateCallSign() + ' ';
+      message += this.chooseIcsCode();
+      App.message1 = message;
+    },
+    generateCallSign: function () {
+      var sign = '',
+          length = Math.random() < 0.5 ? 2 : 3;
+      for (var i = 0; i < length; i++) {
+        sign = this.addRandomChar(sign);
+      }
+      return sign;
+    },
+    addRandomChar: function (message) {
+      var chars = this.enabledChars,
+          randomChar = chars[Math.floor(Math.random() * chars.length)];
+      return message + randomChar;
+    },
+    chooseIcsCode: function () {
+      var codes = icsCodes.filter(this.icsFilter);
+      return codes[Math.floor(Math.random() * codes.length)];
+    },
+    icsFilter: function (code) {
+      var keep = true;
+      code.split("").forEach(function(char){
+        if (!App.enabledChars.includes(char)) { keep = false }
+      });
+      return keep;
+    }
+  },
   components: {
     'key-paddle': KeyPaddle,
     'footer-tab': FooterTab,
@@ -215,17 +271,21 @@ var App = new Vue ({
   }
 });
 
+App.generateMessage();
+
 // --------------------------{  Key Handling  }--------------------------
 
 function keyHandler () {
   // console.log('keyCode: ' + event.keyCode); // Developer mode
-  var eventType = event.type.replace('key', 'mouse');
+  var mouseEvent = document.createEvent('MouseEvents');
+  mouseEvent.initMouseEvent(event.type.replace('key', 'mouse'), true, true,
+    window, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
   switch (event.keyCode) {
     case 16: // Shift
-      $( '#paddle-dash' ).trigger( eventType );
+      $( '#paddle-dash' )[0].dispatchEvent(mouseEvent);
       break;
     case 191: // forward slash
-      $( '#paddle-dot' ).trigger( eventType );
+      $( '#paddle-dot' )[0].dispatchEvent(mouseEvent);
       break;
   }
 }
