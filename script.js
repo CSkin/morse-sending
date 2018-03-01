@@ -329,16 +329,18 @@ var App = new Vue ({
       }
     },
     sendMessage: function () {
-      var output = this.output.slice(0, -1).replace(/_/g, ' ');
-      console.log('Message sent!');
-      console.log('Expected: ' + this.message);
-      console.log('Got: ' + output);
-      if (output === this.message) {
+      var message = this.message,
+          output = this.output.slice(0, -1).replace(/_/g, ' ');
+      if (output === message) {
         this.message = 'CORRECT';
+        window.setTimeout(this.generateMessage, 1500);
       } else {
         this.message = 'INCORRECT';
+        window.setTimeout(function(){
+          App.message = message;
+          App.output = '';
+        }, 1500);
       }
-      window.setTimeout(this.generateMessage, 1500);
     }
   },
   components: {
