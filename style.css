@@ -31,6 +31,16 @@ div {
   padding: 12px;
 }
 
+.correct {
+  background: #80ff80;
+  font-weight: bold;
+}
+
+.incorrect {
+  background: #ff8080;
+  font-weight: bold;
+}
+
 #prompt {
   text-align: center;
   font-size: 1.6em;

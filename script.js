@@ -1,42 +1,42 @@
 // ------------------------{  Data Preparation  }------------------------
 
 var appData = {
-  'A': { 'char': 'A', 'code': Array.from('.-'), 'enabled': false },
-  'B': { 'char': 'B', 'code': Array.from('-...'), 'enabled': false },
-  'C': { 'char': 'C', 'code': Array.from('-.-.'), 'enabled': false },
-  'D': { 'char': 'D', 'code': Array.from('-..'), 'enabled': true },
-  'E': { 'char': 'E', 'code': Array.from('.'), 'enabled': true },
-  'F': { 'char': 'F', 'code': Array.from('..-.'), 'enabled': false },
-  'G': { 'char': 'G', 'code': Array.from('--.'), 'enabled': false },
-  'H': { 'char': 'H', 'code': Array.from('....'), 'enabled': false },
-  'I': { 'char': 'I', 'code': Array.from('..'), 'enabled': false },
-  'J': { 'char': 'J', 'code': Array.from('.---'), 'enabled': false },
-  'K': { 'char': 'K', 'code': Array.from('-.-'), 'enabled': false },
-  'L': { 'char': 'L', 'code': Array.from('.-..'), 'enabled': false },
-  'M': { 'char': 'M', 'code': Array.from('--'), 'enabled': false },
-  'N': { 'char': 'N', 'code': Array.from('-.'), 'enabled': false },
-  'O': { 'char': 'O', 'code': Array.from('---'), 'enabled': false },
-  'P': { 'char': 'P', 'code': Array.from('.--.'), 'enabled': false },
-  'Q': { 'char': 'Q', 'code': Array.from('--.-'), 'enabled': false },
-  'R': { 'char': 'R', 'code': Array.from('.-.'), 'enabled': false },
-  'S': { 'char': 'S', 'code': Array.from('...'), 'enabled': false },
-  'T': { 'char': 'T', 'code': Array.from('-'), 'enabled': false },
-  'U': { 'char': 'U', 'code': Array.from('..-'), 'enabled': false },
-  'V': { 'char': 'V', 'code': Array.from('...-'), 'enabled': false },
-  'W': { 'char': 'W', 'code': Array.from('.--'), 'enabled': false },
-  'X': { 'char': 'X', 'code': Array.from('-..-'), 'enabled': false },
-  'Y': { 'char': 'Y', 'code': Array.from('-.--'), 'enabled': false },
-  'Z': { 'char': 'Z', 'code': Array.from('--..'), 'enabled': false },
-  '01': { 'char': '1', 'code': Array.from('.----'), 'enabled': false },
-  '02': { 'char': '2', 'code': Array.from('..---'), 'enabled': false },
-  '03': { 'char': '3', 'code': Array.from('...--'), 'enabled': false },
-  '04': { 'char': '4', 'code': Array.from('....-'), 'enabled': false },
-  '05': { 'char': '5', 'code': Array.from('.....'), 'enabled': false },
-  '06': { 'char': '6', 'code': Array.from('-....'), 'enabled': false },
-  '07': { 'char': '7', 'code': Array.from('--...'), 'enabled': false },
-  '08': { 'char': '8', 'code': Array.from('---..'), 'enabled': false },
-  '09': { 'char': '9', 'code': Array.from('----.'), 'enabled': false },
-  '00': { 'char': '0', 'code': Array.from('-----'), 'enabled': false }
+  'A': { 'char': 'A', 'code': '.-', 'enabled': false },
+  'B': { 'char': 'B', 'code': '-...', 'enabled': false },
+  'C': { 'char': 'C', 'code': '-.-.', 'enabled': false },
+  'D': { 'char': 'D', 'code': '-..', 'enabled': true },
+  'E': { 'char': 'E', 'code': '.', 'enabled': true },
+  'F': { 'char': 'F', 'code': '..-.', 'enabled': false },
+  'G': { 'char': 'G', 'code': '--.', 'enabled': false },
+  'H': { 'char': 'H', 'code': '....', 'enabled': false },
+  'I': { 'char': 'I', 'code': '..', 'enabled': false },
+  'J': { 'char': 'J', 'code': '.---', 'enabled': false },
+  'K': { 'char': 'K', 'code': '-.-', 'enabled': false },
+  'L': { 'char': 'L', 'code': '.-..', 'enabled': false },
+  'M': { 'char': 'M', 'code': '--', 'enabled': false },
+  'N': { 'char': 'N', 'code': '-.', 'enabled': false },
+  'O': { 'char': 'O', 'code': '---', 'enabled': false },
+  'P': { 'char': 'P', 'code': '.--.', 'enabled': false },
+  'Q': { 'char': 'Q', 'code': '--.-', 'enabled': false },
+  'R': { 'char': 'R', 'code': '.-.', 'enabled': false },
+  'S': { 'char': 'S', 'code': '...', 'enabled': false },
+  'T': { 'char': 'T', 'code': '-', 'enabled': false },
+  'U': { 'char': 'U', 'code': '..-', 'enabled': false },
+  'V': { 'char': 'V', 'code': '...-', 'enabled': false },
+  'W': { 'char': 'W', 'code': '.--', 'enabled': false },
+  'X': { 'char': 'X', 'code': '-..-', 'enabled': false },
+  'Y': { 'char': 'Y', 'code': '-.--', 'enabled': false },
+  'Z': { 'char': 'Z', 'code': '--..', 'enabled': false },
+  '01': { 'char': '1', 'code': '.----', 'enabled': false },
+  '02': { 'char': '2', 'code': '..---', 'enabled': false },
+  '03': { 'char': '3', 'code': '...--', 'enabled': false },
+  '04': { 'char': '4', 'code': '....-', 'enabled': false },
+  '05': { 'char': '5', 'code': '.....', 'enabled': false },
+  '06': { 'char': '6', 'code': '-....', 'enabled': false },
+  '07': { 'char': '7', 'code': '--...', 'enabled': false },
+  '08': { 'char': '8', 'code': '---..', 'enabled': false },
+  '09': { 'char': '9', 'code': '----.', 'enabled': false },
+  '00': { 'char': '0', 'code': '-----', 'enabled': false }
 }
 
 $( document ).ready( function () {
@@ -69,7 +69,7 @@ var KeyPaddle = {
     paddleDown: function () {
       if (App[this.type + 'PaddleDown'] === false) {
         App[this.type + 'PaddleDown'] = true;
-        // What else should happen when a paddle is pressed?
+        App.receiveInput(this.type);
       }
     },
     paddleUp: function () {
@@ -139,13 +139,16 @@ var RefItem = {
     <p class='ref-item'>
       {{ charData.char }}
       <ref-symbol
-        v-for='(symbol, index) in charData.code'
+        v-for='(symbol, index) in codeArray'
         :key='index'
         :symbol='symbol'
       ></ref-symbol>
     </p>
   `,
   props: ['charData'],
+  computed: {
+    codeArray: function () { return Array.from(this.charData.code) }
+  },
   components: {
     'ref-symbol': RefSymbol
   }
@@ -214,8 +217,10 @@ var App = new Vue ({
   el: '#app',
   data: {
     data: appData,
-    message1: null,
-    message2: '',
+    wordsPerMinute: 5,
+    message: null,
+    input: '',
+    output: '',
     dotPaddleDown: false,
     dashPaddleDown: false,
     tab: 'instructions',
@@ -226,6 +231,20 @@ var App = new Vue ({
       return Object.values(this.data)
         .filter( o => o.enabled )
         .map( o => o.char);
+    },
+    timing: function () {
+      var unit = 1200 / this.wordsPerMinute;
+      return {
+        'char': unit * 3,
+        'space': unit * 4,
+        'send': unit * 6
+      }
+    },
+    feedback: function () {
+      return {
+        correct: this.message === 'CORRECT',
+        incorrect: this.message === 'INCORRECT'
+      }
     }
   },
   methods: {
@@ -235,7 +254,8 @@ var App = new Vue ({
       message += ' DE ';
       message += this.generateCallSign() + ' ';
       message += this.chooseIcsCode();
-      App.message1 = message;
+      this.message = message;
+      this.output = '';
     },
     generateCallSign: function () {
       var sign = '',
@@ -260,6 +280,47 @@ var App = new Vue ({
         if (!App.enabledChars.includes(char)) { keep = false }
       });
       return keep;
+    },
+    receiveInput: function (input) {
+      switch (input) {
+        case 'dot':  this.input += '.'; break;
+        case 'dash': this.input += '-'; break;
+      }
+      window.setTimeout(this.charCheck, this.timing.char, this.input);
+    },
+    inputToChar: function (input) {
+      var filtrate = Object.values(this.data).filter( o => o.code === input );
+      return filtrate.length > 0 ? filtrate[0].char : '?';
+    },
+    charCheck: function (input) {
+      if (this.input === input) {
+        this.output += this.inputToChar(this.input);
+        this.input = '';
+        window.setTimeout(this.spaceCheck, this.timing.space);
+      }
+    },
+    spaceCheck: function () {
+      if (this.input === '') {
+        this.output += '_';
+        window.setTimeout(this.sendCheck, this.timing.send, this.output);
+      }
+    },
+    sendCheck: function (output) {
+      if (this.output === output && this.input === '') {
+        this.sendMessage();
+      }
+    },
+    sendMessage: function () {
+      var output = this.output.slice(0, -1).replace(/_/g, ' ');
+      console.log('Message sent!');
+      console.log('Expected: ' + this.message);
+      console.log('Got: ' + output);
+      if (output === this.message) {
+        this.message = 'CORRECT';
+      } else {
+        this.message = 'INCORRECT';
+      }
+      window.setTimeout(this.generateMessage, 1500);
     }
   },
   components: {
