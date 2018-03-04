@@ -215,15 +215,26 @@ var CheckBox = {
 
 var Settings = {
   template: `
-    <form id='settings'>
-      <check-box
-        v-for='(value, key) in data'
-        :key='key'
-        :charData='value'
-      ></check-box>
+    <form>
+      <p>Sending speed:
+        <input id='wpm' type='number' min='1' max='20' :value='wpm'
+          @input='updateWpm($event.target.value)'>
+      words per minute</p>
+      <div id='checkboxes'>
+        <check-box
+          v-for='(value, key) in data'
+          :key='key'
+          :charData='value'
+        ></check-box>
+      </div>
     </form>
   `,
-  props: ['data'],
+  props: ['data', 'wpm'],
+  methods: {
+    updateWpm: function (value) {
+      App.wordsPerMinute = Number(value);
+    }
+  },
   components: {
     'check-box': CheckBox
   }

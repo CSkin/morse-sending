@@ -11,23 +11,31 @@ main {
   width: 320px;
 }
 
+.desktop {
+  margin-top: 12px;
+}
+
 div {
   box-sizing: border-box;
+}
+
+#top {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .panel {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 320px;
+  width: 320px;
   min-height: 160px;
-  margin: 6px 0;
+  margin-bottom: 6px;
   border: 2px solid black;
   background: #ffffff;
 }
 
 #paper {
-  margin-top: 0;
   padding: 12px;
 }
 
@@ -52,7 +60,7 @@ div {
 #key {
   flex-direction: column;
   justify-content: space-between;
-  padding: 7% 10% 3% 10%;
+  padding: 24px 32px 8px 32px;
   background: #dddddd;
 }
 
@@ -112,7 +120,8 @@ div {
 #footer {
   flex-direction: column;
   justify-content: flex-start;
-  margin: 12px 0 0 0;
+  width: 100%;
+  margin: 6px 0 0 0;
   border: none;
   background: initial;
 }
@@ -169,19 +178,6 @@ div {
   -webkit-padding-start: 25px;
 }
 
-#settings {
-  columns: 3em;
-}
-
-.checkbox {
-  margin: 2px 0;
-}
-
-.checkbox input {
-  position: relative;
-  bottom: 1px;
-}
-
 #reference {
   font-size: 1.4em;
   columns: 6em;
@@ -198,4 +194,40 @@ div {
   top: 0.12em;
   height: 1em;
   margin: 0 1px;
+}
+
+#wpm {
+  width: 40px;
+  margin: 0 6px;
+  font-size: 1em;
+}
+
+#checkboxes {
+  margin-top: 15px;
+  columns: 3em;
+}
+
+.checkbox {
+  margin: 2px 0;
+}
+
+.checkbox input {
+  position: relative;
+  bottom: 1px;
+}
+
+@media (min-width: 1000px) {
+  main {
+    width: 646px;
+  }
+
+  #paper {
+    height: 320px;
+    margin-right: 6px;
+  }
+
+  #key {
+    height: 320px;
+    justify-content: space-evenly;
+  }
 }

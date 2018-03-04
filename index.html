@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main id='app' v-cloak>
+    <main id='app' :class='{ desktop: !mobile }' v-cloak>
       <div id='top'>
         <div id='paper' class='panel' :class='feedback' @click='generateMessage'>
           <div id='prompt'>{{ message }}</div>
@@ -47,8 +47,9 @@
           <div id='content'>
             <component
               :is='tab'
-              :mobile='mobile'
               :data='data'
+              :wpm='wordsPerMinute'
+              :mobile='mobile'
             ></component>
           </div>
         </div>
